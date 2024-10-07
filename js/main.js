@@ -9,7 +9,6 @@
 //     console.log(result);
 // }
 
-
 // 2-misol
 // Belgilangan diapazondagi juft sonlar yig'indisini hisoblash
 // **Masala**: 1 dan 100 gacha bo‘lgan sonlarni tekshirib, faqat 30 va 70 orasidagi juft sonlarning yig‘indisini hisoblang. Har bir son uchun bu son juft yoki toq ekanligini ternary operator yordamida aniqlash
@@ -28,8 +27,6 @@
 //     let res = (i%2 == 0 || i%7==0 )?    `Maxsus son`:i;
 //     console.log(res);
 // }
-
-
 
 // Break continue ga oid
 // 1-misol
@@ -55,7 +52,6 @@
 //     }
 //     console.log(i);
 // }
-
 
 // Switch case ga oid misollar
 // 1-misol
@@ -91,7 +87,6 @@
 
 //         break;
 
-
 //     default:
 //         console.log("BUnday hafta kuni yoq");
 //         break;
@@ -107,7 +102,6 @@
 //         console.log("Qish");
 
 //         break;
-
 
 //     case 3:
 //     case 4:
@@ -134,7 +128,6 @@
 //         console.log("Bunday oy fasli mavjud emas");
 //         break;
 // }
-
 
 // 3-misol
 // let baho = +prompt("Bahoni kiriting");
@@ -213,7 +206,6 @@
 //         console.log('Parolni tiklash');
 //         break;
 
-
 //     case 2:
 //         console.log('Parolni o`zgartirish');
 //         break;
@@ -247,7 +239,6 @@
 //     number = +prompt('Son kiriting: ');
 // }
 
-
 // 4-misol
 // let i = 1;
 // while (i <= 20) {
@@ -267,7 +258,6 @@
 // }
 // console.log("Raqamlar yig'indisi: " + raqamlarYigindisi)
 
-
 // 6-misol
 // let num = +prompt("son");
 // while (num >= 1) {
@@ -276,7 +266,6 @@
 // }
 
 // 7-misol
-// Foydalanuvchidan son kiritishni so'raymiz
 // let son = +prompt("Son kiriting: ");
 
 // let raqamlar = "";
@@ -290,7 +279,6 @@
 // }
 
 // console.log("Toq raqamlar: " + raqamlar.trim());
-
 
 // 8-misol
 // let num1 = +prompt("Boshlang'ich son")
@@ -331,9 +319,113 @@
 // console.log('Raqamlar ko`paytmasi ' + raqamlarkopaytmasi);
 // }
 
-
-
 // do…while.  doir misollar
+// 1-misol
+// let g = 1;
+// do {
+//     console.log(g);
+//     g++;
+// } while (g <= 10)
+// // 2-misol
+// let i = 10;
+// do {
+//     console.log(i);
+//     i--;
+// } while (i >= 1) {
+// }
+
+// 3-misol
+// let number = +prompt('Son kiriting: ');
+// do {
+//     alert('Musbat son kiriting!');
+//     number = +prompt('Son kiriting: ');
+
+// } while (number < 0)
+
+// 4-misol
+// let a = 1;
+// do {
+//     if (a % 2 == 0) {
+//         console.log(a);
+//     }
+//     a++;
+
+// } while (a <= 20)
+
+// 5-misol
+// let num = +prompt("son");
+// let raqamlarYigindisi = 0;
+// do {
+//     let number = num % 10;
+//     raqamlarYigindisi += number;
+//     num = Math.floor(num / 10)
+//     console.log("Raqamlar yig'indisi: " + raqamlarYigindisi)
+
+// } while (num > 0)
+
+// 6-misol
+// let num = +prompt("son");
+// do {
+
+//     console.log(num);
+//     num /= 2;
+// }
+// while (num >= 1)
+
+// 7 - misol
+// let son = +prompt("Son kiriting: ");
+
+// let raqamlar = "";
+
+// do {
+
+//     let raqam = son % 10;
+//     if (raqam % 2 !== 0) {
+//         raqamlar += raqam + " ";
+//     }
+//     son = Math.floor(son / 10);
+//     console.log("Toq raqamlar: " + raqamlar.trim());
+// }  while (son > 0)
+
+// 8-misol
+// let num1 = +prompt("Boshlang'ich son")
+// let num2 = +prompt("Yakuniy son")
+
+// do {
+//     if (num1 % 3 == 0) {
+//         console.log(num1);
+//     }
+//     num1++;
+
+// }
+// while (num1 >= num2)
+
+// 9-misol
+// let num = +prompt("son")
+// let teskarison = 0;
+
+// do {
+//     let number = num % 10;
+//     teskarison = teskarison * 10 + number;
+//     num = Math.floor(num / 10)
+//     console.log('teskari son ' + teskarison);
+
+// }  while (num > 0)
+
+// 11-misol
+let num = +prompt("son");
+
+let raqamlarkopaytmasi = 1;
+if (num == 0) {
+  raqamlarkopaytmasi = 0;
+}
+
+do {
+  let number = num % 10;
+  raqamlarkopaytmasi *= number;
+  num = Math.floor(num / 10);
+  console.log("Raqamlar ko`paytmasi " + raqamlarkopaytmasi);
+} while (num > 0);
 
 // Qo`shimcha misollar
 // 1 -misol
@@ -441,7 +533,6 @@
 //     }
 
 // }
-
 
 // Mantiqiy operatsiyalar va arifmetikani qo‘llash
 // 1-misol
